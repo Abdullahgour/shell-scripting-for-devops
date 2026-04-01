@@ -1,0 +1,26 @@
+name: 4 Jobs Pipeline
+
+on:
+  workflow_dispatch: 
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build Stage"
+
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Code Stage"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test Stage"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploy Stage"
