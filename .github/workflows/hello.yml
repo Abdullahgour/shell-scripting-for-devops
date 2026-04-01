@@ -11,4 +11,8 @@ jobs:
         run: echo " hello buddy"
       - name: hello
         run: echo " how are  buddy"
-        
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: version check
+        run: docker --version
